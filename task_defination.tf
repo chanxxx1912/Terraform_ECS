@@ -5,7 +5,7 @@ resource "aws_ecs_cluster" "ecs_cluster" {
 
 resource "aws_ecs_task_definition" "task_definition" {
   family             = "Terraform-ECS-Demo"
-  execution_role_arn = "arn:aws:iam::135634294856:role/ecsTaskExecutionRole"
+  execution_role_arn = "arn:aws:iam::xxxxxxxx:role/ecsTaskExecutionRole"
   memory             = 1024
   cpu                = 512
   container_definitions = jsonencode([
