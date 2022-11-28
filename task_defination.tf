@@ -35,5 +35,5 @@ resource "aws_ecs_service" "nginx" {
   name            = "ecs"
   cluster         = aws_ecs_cluster.ecs_cluster.id
   task_definition = aws_ecs_task_definition.task_definition.arn
-  desired_count   = 2
+  desired_count   = 3
 }
